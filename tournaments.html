@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>КиберОлимп</title>
+</head>
+<body>
+    <!-- Слайдер -->
+    <div class="slider">
+        <img src="images/Турнир1.jpg" alt="Slide 1" class="active">
+        <img src="images/Турнир2.jpg" alt="Slide 2">
+        <img src="images/Турнир3.jpg" alt="Slide 3">
+    </div>
+    <div class="navbar">
+        <img src="Logo/LOGO.png" alt="КиберОлимп">
+        <div class="nav-links">
+            <a href="tour.html">Турниры</a>
+            <a href="forum.html">Форум</a>
+            <a href="tournaments.html">Расписание турниров</a>
+            <a href="team.html">Команды</a>
+        </div>
+        <a href="entrance.html">Вход/Регистрация</a>
+    </div>
+
+    <div class="content">
+        <h2>Турниры по CS2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Команды</th>
+                    <th>Игра 1</th>
+                    <th>Игра 2</th>
+                    <th>Игра 3</th>
+                    <th>Игра 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Качки идут за дрищами</td>
+                    <td style="background-color: brown;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Team SPIRIT</td>
+                    <td></td>
+                    <td style="background-color: brown;"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>БОБРЫ ДОБРЫ</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color: brown;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ТЯЖЕЛО ТАЩИТЬ СОЛО</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color: brown;"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Турниры по DOTA 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Команды</th>
+                    <th>Игра 1</th>
+                    <th>Игра 2</th>
+                    <th>Игра 3</th>
+                    <th>Игра 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Русские медведи</td>
+                    <td style="background-color: brown;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ZXC</td>
+                    <td></td>
+                    <td style="background-color: brown;"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HOLLOW</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color: brown;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Phenix</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color: brown;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-left">
+                <img src="Logo/LOGO.png" alt="КиберОлимп">
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-center">
+                <h3>О нас</h3>
+                <div class="footer-links">
+                    <a href="forum.html">Информация</a>
+                    <a href="forum.html">FAQ</a>
+                    <a href="forum.html">Обзоры</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-center">
+                <h3>Поддержка</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><strong>Email:</strong> cyberolympgamer@yandex.ru</li>
+                        <li><strong>Телефон:</strong> +7 (952) 220-00-67</li>
+                        <li><strong>Часы работы:</strong> Пн-Пт, с 10:00 до 18:00 по МСК.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Скрипт для автоматической прокрутки слайдера
+        const images = document.querySelectorAll('.slider img');
+        let current = 0;
+
+        function slider() {
+            for (let i = 0; i < images.length; i++) {
+                images[i].classList.remove('active');
+            }
+            images[current].classList.add('active');
+            current = (current + 1) % images.length;
+        }
+
+        setInterval(slider, 5000); // Меняем изображение каждые 5 секунд
+    
+    </script>
+</body>
+</html>

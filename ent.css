@@ -1,0 +1,88 @@
+/* Видеофон */
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover; 
+}
+/* Основной контент */
+.content {
+    padding-top: 30px;
+    flex: 1;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    padding-top: 50px; 
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+    height: auto;
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    box-shadow: 0 0px 10px white;
+    padding: 20px;
+}
+
+input {
+    font-family: Gabriela;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 0;
+    padding: 10px;
+}
+
+.space {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+fieldset a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+fieldset a:hover {
+    color: rgb(255, 13, 13);
+    text-decoration: underline;
+}
+
+button {
+    font-family: Gabriela;
+    color: white;
+    font-size: 20px; 
+    width: 280px;
+    border: 0;
+    background-color: green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+    background-color: white;
+}
