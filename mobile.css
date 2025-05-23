@@ -1,15 +1,3 @@
-@media (max-width: 900px) {
-    #bgvideo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Масштабирует видео, чтобы оно покрывало всю область */
-        z-index: -1; /* Помещаем видео под контент */
-    }
-}
-
 /* Медиа-запрос для мобильных устройств */
 @media (max-width: 900px) {
     /* Навигационная панель */
@@ -199,14 +187,12 @@
         width: 100%; 
         padding: 10px;
         box-sizing: border-box; 
-        place-items: center;
     }
 
     fieldset {
         width: 100%; 
         padding: 15px; 
         border-radius: 10px; 
-        
     }
 
     h2 {
