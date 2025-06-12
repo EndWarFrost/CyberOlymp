@@ -1,0 +1,58 @@
+/* Стили для сетки турниров */
+.tournaments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Стили для блока турнира */
+.tournament-box {
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.tournament-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.tournament-box h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+    color: #15ff00b4;
+    text-shadow: 0 0 5px white;
+}
+
+.tournament-box p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tournament-box button {
+    font-family: Gabriela;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    border: 0;
+    background-color: #027708;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tournament-box button:hover {
+    color: #5008f8;
+    background-color: white;
+    transform: scale(1.1);
+}
