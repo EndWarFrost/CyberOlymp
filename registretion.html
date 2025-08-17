@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/ent.css">
-    <link rel="stylesheet" href="styles/mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>КиберОлимп</title>
-</head>
-<body>
-    <!-- Видеофон -->
-    <video autoplay muted loop id="bgvideo">
-        <source src="Background/BackgroundReg.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
-    </video>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<title>КиберОлимп</title>
+	</head>
+	<body>
+		<!-- Видеофон -->
+		<video autoplay muted loop id="bgvideo">
+			<source src="Background/BackgroundReg.mp4" type="video/mp4" />
+			Ваш браузер не поддерживает видео.
+		</video>
 
-    <div class="navbar">
-        <img src="images/LOGO.png" alt="КиберОлимп">
-        <div class="nav-links">
-            <a href="tour.html">Турниры</a>
-            <a href="forum.html">Форум</a>
-            <a href="tournaments.html">Расписание турниров</a>
-            <a href="team.html">Команды</a>
-        </div>
-        <a href="index.html">Вернуться</a>
-    </div>
+		<header class="header">
+			<img src="images/LOGO.png" alt="КиберОлимп" />
+			<div class="nav-links">
+				<a href="tour.html">Турниры</a>
+				<a href="forum.html">Форум</a>
+				<a href="tournaments.html">Расписание турниров</a>
+				<a href="team.html">Команды</a>
+			</div>
+			<a href="index.html">Вернуться</a>
+		</header>
 
-    <div class="content">
-        <form id="RegistrForm">
-            <fieldset>
-                <h2>Регистрация</h2>
-                <input type="email" name="Login" class="space" placeholder="Email" maxlength="50" required>
-                <br>
-                <input type="text" name="Login" class="space" placeholder="Login" maxlength = "25"required>
-                <br>
-                <div style="position: relative; display: inline-block;">
-                    <input type="password" name="Password" id="password" class="space" placeholder="Password" maxlength="50" required>
-                    <i class="fas fa-eye password-toggle" id="togglePassword" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i>
-                </div>
-                <br>
-                <div style="position: relative; display: inline-block;">
-                    <input type="password" name="ConfirmPassword" id="confirmPassword" class="space" placeholder="Confirm password" maxlength="50" required>
-                    <i class="fas fa-eye password-toggle" id="toggleConfirmPassword" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i>
-                </div>
-                <div id="error-message">Пароли не совпадают!</div>
-                <br>
-                <div class="remember-me">
-                    <input type="checkbox" id="remember" class="space" required>
-                    <label for="remember">Запомнить меня</label>
-                </div>
-                <br>
-                <a href="entrance.html">Авторизация</a>
-                <br>
-                <button type="submit">Регистрация</button>
-            </fieldset>
-        </form>
-    </div>
+		<main class="content">
+			<form id="RegistrForm">
+				<fieldset>
+					<h2>Регистрация</h2>
+					<input
+						type="email"
+						name="Login"
+						class="space"
+						placeholder="Email"
+						maxlength="50"
+						required
+					/>
+					<br />
+					<input
+						type="text"
+						name="Login"
+						class="space"
+						placeholder="Login"
+						maxlength="25"
+						required
+					/>
+					<br />
+					<div style="position: relative; display: inline-block">
+						<input
+							type="password"
+							name="Password"
+							id="password"
+							class="space"
+							placeholder="Password"
+							maxlength="50"
+							required
+						/>
+						<i
+							class="fas fa-eye password-toggle"
+							id="togglePassword"
+							style="
+								position: absolute;
+								right: 15px;
+								top: 50%;
+								transform: translateY(-50%);
+								cursor: pointer;
+							"
+						></i>
+					</div>
+					<br />
+					<div style="position: relative; display: inline-block">
+						<input
+							type="password"
+							name="ConfirmPassword"
+							id="confirmPassword"
+							class="space"
+							placeholder="Confirm password"
+							maxlength="50"
+							required
+						/>
+						<i
+							class="fas fa-eye password-toggle"
+							id="toggleConfirmPassword"
+							style="
+								position: absolute;
+								right: 15px;
+								top: 50%;
+								transform: translateY(-50%);
+								cursor: pointer;
+							"
+						></i>
+					</div>
+					<div id="error-message">Пароли не совпадают!</div>
+					<br />
+					<div class="remember-me">
+						<input type="checkbox" id="remember" class="space" required />
+						<label for="remember">Запомнить меня</label>
+					</div>
+					<br />
+					<a href="entrance.html">Авторизация</a>
+					<br />
+					<button type="submit">Регистрация</button>
+				</fieldset>
+			</form>
+		</main>
 
-    <footer>
-        <div class="footer-section">
-            <div class="footer-left">
-                <img src="images/LOGO.png" alt="КиберОлимп">
-            </div>
-        </div>
-        <div class="footer-section">
-            <div class="footer-center">
-                <h3>О нас</h3>
-                <div class="footer-links">
-                    <a href="forum.html">Информация</a>
-                    <a href="forum.html">FAQ</a>
-                    <a href="forum.html">Обзоры</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-section">
-            <div class="footer-center">
-                <h3>Поддержка</h3>
-                <div class="footer-links">
-                    <ul>
-                        <li><strong>Email:</strong> cyberolympgamer@yandex.ru</li>
-                        <li><strong>Телефон:</strong> +7 (952) 220-00-67</li>
-                        <li><strong>Часы работы:</strong> Пн-Пт, с 10:00 до 18:00 по МСК.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script>
-        const passwordInput = document.getElementById('password');
-        const confirmPasswordInput = document.getElementById('confirmPassword');
-        const errorMessage = document.getElementById('error-message');
-        const form = document.getElementById('RegistrForm');
-        const togglePassword = document.getElementById('togglePassword');
-        const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
-
-        // Переключение видимости пароля
-        togglePassword.addEventListener('click', function() {
-            togglePasswordVisibility(passwordInput, togglePassword);
-        });
-
-        toggleConfirmPassword.addEventListener('click', function() {
-            togglePasswordVisibility(confirmPasswordInput, toggleConfirmPassword);
-        });
-
-        function togglePasswordVisibility(input, icon) {
-            if (input.type === 'password') {
-                input.type = 'text';
-                icon.classList.replace('fa-eye', 'fa-eye-slash');
-            } else {
-                input.type = 'password';
-                icon.classList.replace('fa-eye-slash', 'fa-eye');
-            }
-        }
-
-        // Динамическая проверка при вводе
-        confirmPasswordInput.addEventListener('input', function() {
-            if (passwordInput.value !== confirmPasswordInput.value) {
-                confirmPasswordInput.classList.add('error');
-                confirmPasswordInput.classList.remove('success');
-                errorMessage.style.display = 'block';
-            } else {
-                confirmPasswordInput.classList.remove('error');
-                confirmPasswordInput.classList.add('success');
-                errorMessage.style.display = 'none';
-            }
-        });
-
-        // Проверка при отправке формы
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            if (passwordInput.value !== confirmPasswordInput.value) {
-                confirmPasswordInput.classList.add('error');
-                errorMessage.style.display = 'block';
-                return; // Остановка отправки формы
-            }
-
-            // Если пароли совпадают, перенаправляем
-            window.location.href = 'tour.html';
-        });
-    </script>
-</body>
+		<footer>
+			<section class="footer-section">
+				<div class="footer-left">
+					<img src="images/LOGO.png" alt="КиберОлимп" />
+				</div>
+			</section>
+			<section class="footer-section">
+				<div class="footer-center">
+					<h3>О нас</h3>
+					<div class="footer-links">
+						<a href="forum.html">Информация</a>
+						<a href="forum.html">FAQ</a>
+						<a href="forum.html">Обзоры</a>
+					</div>
+				</div>
+			</section>
+			<section class="footer-section">
+				<div class="footer-center">
+					<h3>Поддержка</h3>
+					<div class="footer-links">
+						<ul>
+							<li><strong>Email:</strong> cyberolympgamer@yandex.ru</li>
+							<li><strong>Телефон:</strong> +7 (952) 220-00-67</li>
+							<li>
+								<strong>Часы работы:</strong> Пн-Пт, с 10:00 до 18:00 по МСК.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</footer>
+		<script src="script/check.js"></script>
+	</body>
 </html>
